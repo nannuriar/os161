@@ -50,7 +50,6 @@
 #include <test.h>
 #include <version.h>
 #include "autoconf.h"  // for pseudoconfig
-#include <hello.h>
 #include "opt-A0.h"
 
 /*
@@ -105,9 +104,9 @@ boot(void)
 	kprintf("Welcome Ashish how are you today. system version %s (%s #%d)\n", 
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
-	if OPT_A0
+	#if OPT_A0
 	   hello();
-	endif /* OPT_A0 */
+	#endif /* OPT_A0 */
 
 	/* Early initialization. */
 	ram_bootstrap();
