@@ -50,6 +50,7 @@ int catmouse(int, char **);
 /* lib tests */
 int arraytest(int, char **);
 int bitmaptest(int, char **);
+int printtest();
 int queuetest(int, char **);
 
 /* thread tests */
