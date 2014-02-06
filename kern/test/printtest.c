@@ -1,10 +1,14 @@
 #include <types.h>
 #include <lib.h>
+ 
 
-int printtest(){
-
-	kprintf("Hello World \n");
-	return 0;
-
+int printtest(int argc, char **argv){
+	    	int ncount = argc;   
+  			while(ncount--){
+			  	kprintf("%s\n", *argv++);
+		   }
+			return 0;
 }
+
+
 
